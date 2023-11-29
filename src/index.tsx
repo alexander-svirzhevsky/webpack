@@ -1,11 +1,11 @@
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import App from "./App";
+import App from "@/App";
 import { Suspense, lazy } from "react";
 
-const About = lazy(() => import("./pages/about/About"));
-const Login = lazy(() => import("./pages/login/Login"));
+const About = lazy(() => import("@/pages/about/About"));
+const Login = lazy(() => import("@/pages/login/Login"));
 
 const domNode = document.getElementById("root");
 const root = createRoot(domNode);
