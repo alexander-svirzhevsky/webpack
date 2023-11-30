@@ -5,6 +5,7 @@ const buildResolvers = ({ paths }: BuildOptions): Configuration["resolve"] => {
   return {
     extensions: [".tsx", ".ts", ".js"],
     alias: {
+      // use absolute path while doing import @/src/...
       "@": paths.src
     }
   }
